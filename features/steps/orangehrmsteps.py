@@ -2,8 +2,6 @@ import time
 from behave import *
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 PATH_DRIVER = r'C:\Users\Mathias\Desktop\qa.selenium\chromedriver.exe'
 
@@ -17,7 +15,7 @@ def launchBrowser(context):
 @when(u'open orangehrm homepage')
 def openHomePage(context):
     context.driver.get('https://opensource-demo.orangehrmlive.com/')
-    time.sleep(5)
+    time.sleep(2)
 
 @then(u'verify that the logo present on page')
 def verifyLogo(context):
