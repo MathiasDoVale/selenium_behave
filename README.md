@@ -20,3 +20,9 @@ Link: https://docs.qameta.io/allure/
 After allure instalation use:
 - To generate reports: behave -f allure_behave.formatter:AllureFormatter -o reports/ features
 - To visualize running server: allure serve reports (in Powershell)
+
+
+![report1](https://user-images.githubusercontent.com/25461133/233237083-1b92be4f-c2a7-490f-a76a-5029e0e6a0a6.png)
+
+
+![report2](https://user-images.githubusercontent.com/25461133/233237090-b5dd7592-4959-4302-abef-5ad07bfb74f0.png)
