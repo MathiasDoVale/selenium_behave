@@ -2,11 +2,15 @@ import time
 from behave import *
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from dotenv.main import load_dotenv
+import os
 
-PATH_DRIVER = r'C:\Users\Mathias\Desktop\qa.selenium\chromedriver.exe'
+load_dotenv()
+PATH_DRIVER = os.environ.get('PATH_DRIVER')
 
 @given(u'launch chrome browser')
 def launchBrowser(context):
+    print(PATH_DRIVER)
     options = webdriver.ChromeOptions() 
     # to supress the error messages/logs
     options.add_experimental_option('excludeSwitches', ['enable-logging'])

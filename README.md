@@ -10,8 +10,9 @@ Link: https://www.youtube.com/watch?v=JIyvAFBx2Fw&list=PLUDwpEzHYYLsARXz1o3Ldt1F
 - [Selenium 4.8.3]
 - [Behave 1.2.6]
 - [ChromeWebDriver] (https://chromedriver.chromium.org/downloads - Same version as your Chrome)
-- Configure PATH_DRIVER variable to your local "chromedriver.exe"
 - [Allure-behave==2.13.1]
+- [Python-dotenv==1.0.0]
+- Configure PATH_DRIVER variable to your local "chromedriver.exe" in .env file. (PATH_DRIVER="your/chromedriver.exe/route")
 
 ### Allure (reports)
 Follow these instructions to use "allure" commands. (Report creation E.g.)

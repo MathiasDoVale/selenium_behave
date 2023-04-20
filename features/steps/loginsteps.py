@@ -2,8 +2,9 @@ import time
 from behave import *
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import os
 
-PATH_DRIVER = r'C:\Users\Mathias\Desktop\qa.selenium\chromedriver.exe'
+PATH_DRIVER = os.environ.get('PATH_DRIVER')
 
 @given(u'I launch chrome browser')
 def launchBrowser(context):
