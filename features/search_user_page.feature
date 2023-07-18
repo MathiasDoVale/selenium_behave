@@ -1,4 +1,4 @@
-Feature: OrangeHRM Background
+Feature: Search user page
 
     Background: Common steps
         Given I Launch chrome browser

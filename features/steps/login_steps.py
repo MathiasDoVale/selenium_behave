@@ -1,17 +1,18 @@
 import time
 from behave import *
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from dotenv.main import load_dotenv
 import os
 
+load_dotenv()
 PATH_DRIVER = os.environ.get('PATH_DRIVER')
 
 @given(u'I launch chrome browser')
 def launchBrowser(context):
-    options = webdriver.ChromeOptions() 
-    # to supress the error messages/logs
-    options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    context.driver = webdriver.Chrome(options=options, executable_path=PATH_DRIVER)
+    service = Service(PATH_DRIVER)
+    context.driver = webdriver.Chrome(service=service)
 
 @when(u'I open orangehrm homepage')
 def openHomePage(context):

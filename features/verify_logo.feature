@@ -1,4 +1,4 @@
-Feature: OrangeHRM Logo
+Feature: Verify Logo
 
     Scenario: Logo presence on OrangeHRM homepage
         Given Launch chrome browser

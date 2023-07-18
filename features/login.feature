@@ -1,4 +1,4 @@
-Feature: OrangeHRM Login
+Feature: Login
 
     Scenario: Login with valid parameters
         Given I Launch chrome browser
